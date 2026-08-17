@@ -1,16 +1,16 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import { BrowserRouter } from "react-router-dom";
+import { HashRouter } from "react-router-dom"; // 1. ផ្លាស់ប្តូរពី BrowserRouter មកជា HashRouter
 import "./index.css";
 import App from "./App.jsx";
-import { CartProvider } from "./context/CartContext"; // នាំចូល CartProvider (សូមផ្ទៀងផ្ទាត់ Path ឱ្យបានត្រឹមត្រូវ)
+import { CartProvider } from "./context/CartContext";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <BrowserRouter>
+    <HashRouter> {/* 2. ប្រើ HashRouter ជំនួស BrowserRouter នៅទីនេះ */}
       <CartProvider>
         <App />
       </CartProvider>
-    </BrowserRouter>
+    </HashRouter>
   </StrictMode>
 );
