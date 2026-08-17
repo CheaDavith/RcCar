@@ -1,0 +1,70 @@
+.models-page {
+  padding: 40px 48px 64px;
+  background: #1b1122;
+  min-height: 70vh;
+}
+
+.models-page__header {
+  margin-bottom: 24px;
+}
+
+.models-page__header h1 {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 36px;
+  color: #fdf3ee;
+  margin: 0 0 6px;
+}
+
+.models-page__header p {
+  color: #cbb9c4;
+  font-size: 14px;
+  margin: 0;
+}
+
+.models-page__filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 32px;
+}
+
+.models-page__filter {
+  background: #2a1b36;
+  border: 1px solid #3d2a48;
+  color: #e9dce2;
+  padding: 8px 18px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s ease, border-color 0.15s ease;
+}
+
+.models-page__filter:hover {
+  border-color: #b23b3b;
+}
+
+.models-page__filter--active {
+  background: linear-gradient(180deg, #c62828 0%, #7c2020 100%);
+  border-color: transparent;
+  color: #fdf3ee;
+}
+
+.models-page__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 24px;
+}
+
+.models-page__empty {
+  color: #cbb9c4;
+  font-size: 14px;
+  padding: 40px 0;
+  text-align: center;
+}
+
+@media (max-width: 700px) {
+  .models-page {
+    padding: 32px 20px 48px;
+  }
+}

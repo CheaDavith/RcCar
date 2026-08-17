@@ -1,0 +1,36 @@
+.auth-page {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 24px;
+  background-color: #241734;
+  background-image: repeating-linear-gradient(90deg, #2a1b3a 0 40px, #241734 40px 84px);
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 380px;
+  background: #2a1b36;
+  border: 1px solid #3d2a48;
+  border-radius: 10px;
+  padding: 36px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.35);
+}
+
+.auth-card h1 { font-family: "Playfair Display", Georgia, serif; font-size: 28px; color: #fdf3ee; margin: 0 0 4px; }
+.auth-card__subtitle { font-size: 13px; color: #cbb9c4; margin: 0 0 20px; line-height: 1.5; }
+.auth-field { display: flex; flex-direction: column; gap: 6px; margin-bottom: 16px; font-size: 13px; color: #e9dce2; }
+.auth-field input { background: #1f1329; border: 1px solid #3d2a48; border-radius: 6px; padding: 10px 12px; color: #fdf3ee; font-size: 14px; outline: none; transition: border-color 0.15s ease; }
+.auth-field input:focus { border-color: #c62828; }
+.auth-field input[aria-invalid="true"] { border-color: #e07070; }
+.auth-error { color: #f2a0a0; font-size: 12px; }
+.auth-submit { margin-top: 8px; background: linear-gradient(180deg, #c62828 0%, #7c2020 100%); color: #fdf3ee; border: none; border-radius: 6px; padding: 12px; font-size: 14px; font-weight: 700; letter-spacing: 0.02em; cursor: pointer; transition: opacity 0.15s ease; }
+.auth-submit:hover { opacity: 0.92; }
+.auth-submit:disabled { opacity: 0.6; cursor: not-allowed; }
+.auth-switch { margin-top: 18px; text-align: center; font-size: 13px; color: #cbb9c4; }
+.auth-switch a { color: #e9a7b1; font-weight: 600; text-decoration: none; }
+.auth-switch a:hover { text-decoration: underline; }

@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", "Segoe UI", Arial, sans-serif;
+  background: #1b1122;
+  color: #fdf3ee;
+}
+
+a {
+  color: inherit;
+}
+
+button {
+  font-family: inherit;
+}

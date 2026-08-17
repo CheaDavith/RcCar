@@ -1,0 +1,234 @@
+.product-details {
+  padding: 32px 48px 64px;
+  background: #1b1122;
+  min-height: 70vh;
+}
+
+.product-details--empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 8px;
+  padding: 100px 24px;
+  color: #fdf3ee;
+}
+
+.product-details--empty p {
+  color: #cbb9c4;
+  margin-bottom: 16px;
+}
+
+.product-details__crumb {
+  display: inline-block;
+  color: #e9a7b1;
+  text-decoration: none;
+  font-size: 13px;
+  margin-bottom: 24px;
+}
+
+.product-details__crumb:hover {
+  text-decoration: underline;
+}
+
+.product-details__back {
+  color: #fdf3ee;
+  background: linear-gradient(180deg, #c62828 0%, #7c2020 100%);
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.product-details__main {
+  display: grid;
+  grid-template-columns: minmax(280px, 460px) 1fr;
+  gap: 48px;
+}
+
+.product-details__image-wrap {
+  position: relative;
+  background: #f3dbe0;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+}
+
+.product-details__image-wrap img {
+  width: 90%;
+  height: auto;
+}
+
+.product-details__type {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  background: #7c2020;
+  color: #fdf3ee;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  border-radius: 4px;
+  z-index: 2;
+}
+
+.product-details__info h1 {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 32px;
+  color: #fdf3ee;
+  margin: 0 0 8px;
+}
+
+.product-details__price {
+  font-size: 22px;
+  font-weight: 700;
+  color: #e9a7b1;
+  margin: 0 0 16px;
+}
+
+.product-details__description {
+  color: #cbb9c4;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+.product-details__specs {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 24px;
+  margin: 0 0 28px;
+}
+
+.product-details__specs dt {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #8f7c8a;
+  margin-bottom: 4px;
+}
+
+.product-details__specs dd {
+  margin: 0;
+  color: #fdf3ee;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.product-details__actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.product-details__qty {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: #2a1b36;
+  border: 1px solid #3d2a48;
+  border-radius: 6px;
+  padding: 8px 14px;
+}
+
+.product-details__qty button {
+  background: transparent;
+  border: none;
+  color: #fdf3ee;
+  font-size: 16px;
+  cursor: pointer;
+  width: 20px;
+}
+
+.product-details__qty span {
+  min-width: 20px;
+  text-align: center;
+  color: #fdf3ee;
+  font-weight: 700;
+}
+
+.product-details__add {
+  background: linear-gradient(180deg, #c62828 0%, #7c2020 100%);
+  color: #fdf3ee;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 28px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: opacity 0.15s ease;
+}
+
+.product-details__add:hover {
+  opacity: 0.92;
+}
+
+.product-details__related {
+  margin-top: 64px;
+}
+
+.product-details__related h2 {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 22px;
+  color: #fdf3ee;
+  margin-bottom: 18px;
+}
+
+.product-details__related-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 20px;
+}
+
+.product-details__related-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #2a1b36;
+  border: 1px solid #3d2a48;
+  border-radius: 8px;
+  padding: 12px;
+  text-decoration: none;
+  color: inherit;
+  transition: border-color 0.15s ease;
+}
+
+.product-details__related-card:hover {
+  border-color: #b23b3b;
+}
+
+.product-details__related-card img {
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.product-details__related-name {
+  font-size: 13px;
+  color: #fdf3ee;
+  margin: 0 0 4px;
+}
+
+.product-details__related-price {
+  font-size: 13px;
+  font-weight: 700;
+  color: #e9a7b1;
+  margin: 0;
+}
+
+@media (max-width: 800px) {
+  .product-details {
+    padding: 24px 20px 48px;
+  }
+  .product-details__main {
+    grid-template-columns: 1fr;
+  }
+}

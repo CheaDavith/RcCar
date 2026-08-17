@@ -1,0 +1,117 @@
+.about-page {
+  min-height: 80vh;
+  padding: 60px 24px;
+  background-color: #241734;
+  background-image: repeating-linear-gradient(90deg, #2a1b3a 0 40px, #241734 40px 84px);
+  color: #fdf3ee;
+}
+
+.about-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.about-hero {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 50px;
+}
+
+.about-hero h1 {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 42px;
+  margin: 0 0 16px;
+  color: #fdf3ee;
+}
+
+.about-lead {
+  font-size: 16px;
+  color: #cbb9c4;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 800px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.about-card {
+  background: #2a1b36;
+  border: 1px solid #3d2a48;
+  border-radius: 10px;
+  padding: 32px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+}
+
+.about-icon-wrap {
+  width: 48px;
+  height: 48px;
+  background: #7c2020;
+  color: #fdf3ee;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4px;
+}
+
+.about-card h2 {
+  font-size: 18px;
+  color: #fdf3ee;
+  margin: 0;
+}
+
+.about-card p {
+  font-size: 14px;
+  color: #cbb9c4;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.about-community {
+  background: linear-gradient(135deg, #2a1b36 0%, #342042 100%);
+  border: 1px solid #4a3357;
+  border-radius: 12px;
+  padding: 40px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.community-content {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.community-badge-wrap {
+  color: #e9a7b1;
+}
+
+.community-content h2 {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 26px;
+  margin: 0;
+  color: #fdf3ee;
+}
+
+.community-content p {
+  font-size: 15px;
+  color: #cbb9c4;
+  line-height: 1.6;
+  margin: 0;
+}
